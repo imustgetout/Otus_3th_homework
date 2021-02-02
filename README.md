@@ -1,4 +1,22 @@
-# Otus_3th_homework
+# Работа с LVM
+на имеющемся образе
+/dev/mapper/VolGroup00-LogVol00 38G 738M 37G 2% /
+
+уменьшить том под / до 8G
+выделить том под /home
+выделить том под /var
+/var - сделать в mirror
+/home - сделать том для снэпшотов
+прописать монтирование в fstab
+попробовать с разными опциями и разными файловыми системами ( на выбор)
+- сгенерить файлы в /home/
+- снять снэпшот
+- удалить часть файлов
+- восстановится со снэпшота
+- залоггировать работу можно с помощью утилиты script
+
+* на нашей куче дисков попробовать поставить btrfs/zfs - с кешем, снэпшотами - разметить здесь каталог /opt
+
 <pre>[andrey@localhost LVM]$ vagrant up
 Bringing machine &apos;lvm&apos; up with &apos;virtualbox&apos; provider...
 <b>==&gt; lvm: Importing base box &apos;centos/7&apos;...</b>
